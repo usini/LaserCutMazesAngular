@@ -526,17 +526,19 @@
     </table>
     <div class="try-clicking"><- Essayez de cliquer sur les murs du labyrinthe pour les activer/désactiver</div>
 
-    </div>
+    </div><br>
     <input type="button" (click)="exportSvg()" value="Exporter le Plan SVG" [disabled]="!maze" />
     <app-help-modal>
         <div class="title">Exporter la Conception du Labyrinthe vers un Plan SVG</div>
         <div class="body">Une fois que vous avez créé un labyrinthe qui vous plaît avec les paramètres ci-dessus,
             cliquez ici pour créer le fichier SVG à télécharger.</div>
     </app-help-modal>
+    
     <label for="auto-svg">La génération automatique du SVG est {{autoGenerateSvg ? "activée" :
         "désactivée"}}</label><input id="auto-svg" type="checkbox" [(ngModel)]="autoGenerateSvg"
         name="autoSvgCheckbox" />
-    <input type="button" (click)="downloadSvg()" value="Télécharger" [disabled]="!rawSvgSrc" />
+        <br>
+        <input type="button" (click)="downloadSvg()" value="Télécharger" [disabled]="!rawSvgSrc" />
     <label for="svg-preview">L'aperçu SVG est {{showSvgPreview ? "activé" : "désactivé"}}</label><input id="svg-preview"
         type="checkbox" [(ngModel)]="showSvgPreview" name="svgPreviewCheckbox" />
     <app-help-modal>
