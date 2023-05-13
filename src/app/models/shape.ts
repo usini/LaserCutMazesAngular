@@ -1,8 +1,8 @@
 import type Big from "big.js";
 
-import OrderedPair from "app/common/ordered-pair";
-import { ZERO } from "app/misc/big-util";
-import Path from "app/models/path";
+import OrderedPair from "../common/ordered-pair";
+import { ZERO } from "../misc/big-util";
+import Path from "../models/path";
 
 /**
  * A shape is a collection of paths. It can have one or many paths that are each not connected to each other.

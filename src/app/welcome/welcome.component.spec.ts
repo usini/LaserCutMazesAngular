@@ -1,7 +1,7 @@
 import type { ComponentFixture} from "@angular/core/testing";
 import { async, TestBed } from "@angular/core/testing";
 
-import { WelcomeComponent } from "app/welcome/welcome.component";
+import { WelcomeComponent } from "../welcome/welcome.component";
 
 describe("WelcomeComponent", () => {
     let component: WelcomeComponent;

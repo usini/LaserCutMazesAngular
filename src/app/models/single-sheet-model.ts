@@ -1,7 +1,7 @@
 import type Big from "big.js";
 
-import type Path from "app/models/path";
-import Shape from "app/models/shape";
+import type Path from "../models/path";
+import Shape from "../models/shape";
 
 export default class SingleSheetModel {
     public readonly holes: Shape = new Shape();

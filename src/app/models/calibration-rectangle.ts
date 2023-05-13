@@ -1,4 +1,4 @@
-import Unit from "app/common/unit";
+import Unit from "../common/unit";
 
 /**
  * A model for a single rectangle with integral width and height values in inches or cm. This can be printed on an SVG

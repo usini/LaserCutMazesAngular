@@ -1,8 +1,8 @@
 import type { ComponentFixture} from "@angular/core/testing";
 import { async, TestBed } from "@angular/core/testing";
 
-import { HelpComponent } from "app/help/help.component";
-import { LightboxThumbnailComponent } from "app/lightbox-thumbnail/lightbox-thumbnail.component";
+import { HelpComponent } from "../help/help.component";
+import { LightboxThumbnailComponent } from "../lightbox-thumbnail/lightbox-thumbnail.component";
 
 describe("HelpComponent", () => {
     let component: HelpComponent;

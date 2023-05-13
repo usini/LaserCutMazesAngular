@@ -1,7 +1,7 @@
 import type { RandomSeed } from "random-seed";
 import { create } from "random-seed";
 
-import type Maze from "app/models/maze";
+import type Maze from "../models/maze";
 
 /**
  * Subclasses can use any maze-generation algorithm to build the paths of a maze

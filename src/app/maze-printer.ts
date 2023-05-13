@@ -1,15 +1,15 @@
 import type Big from "big.js";
 
-import OrderedPair from "app/common/ordered-pair";
-import type Unit from "app/common/unit";
-import { ZERO } from "app/misc/big-util";
-import SVG_HEADER from "app/misc/svg-header";
-import type CalibrationRectangle from "app/models/calibration-rectangle";
-import SheetWallModel from "app/models/sheet-wall-model";
-import type SingleSheetModel from "app/models/single-sheet-model";
-import type VectorNumber from "app/models/vector-number";
-import Path from "app/svg/path";
-import SvgElementGenerator from "app/svg/svg-element-generator";
+import OrderedPair from "./common/ordered-pair";
+import type Unit from "./common/unit";
+import { ZERO } from "./misc/big-util";
+import SVG_HEADER from "./misc/svg-header";
+import type CalibrationRectangle from "./models/calibration-rectangle";
+import SheetWallModel from "./models/sheet-wall-model";
+import type SingleSheetModel from "./models/single-sheet-model";
+import type VectorNumber from "./models/vector-number";
+import Path from "./svg/path";
+import SvgElementGenerator from "./svg/svg-element-generator";
 
 export default class MazePrinter {
     public singleSheetModel: SingleSheetModel | null = null;

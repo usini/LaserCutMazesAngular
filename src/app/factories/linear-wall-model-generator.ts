@@ -1,8 +1,8 @@
-import OrderedPair from "app/common/ordered-pair";
-import Direction from "app/direction";
-import LinearWallModel, { Wall as LwmWall } from "app/models/linear-wall-model";
-import type Maze from "app/models/maze";
-import type Space from "app/models/space";
+import OrderedPair from "../common/ordered-pair";
+import Direction from "../direction";
+import LinearWallModel, { Wall as LwmWall } from "../models/linear-wall-model";
+import type Maze from "../models/maze";
+import type Space from "../models/space";
 
 /**
  * An instance of LinearWallModelGenerator can be used to create a {@link LinearWallModel} from a {@link Maze}

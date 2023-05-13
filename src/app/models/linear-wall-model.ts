@@ -1,5 +1,5 @@
-import type OrderedPair from "app/common/ordered-pair";
-import Direction from "app/direction";
+import type OrderedPair from "../common/ordered-pair";
+import Direction from "../direction";
 
 /**
  * A wall within a LinearWallModel. The model is a 2D top-down representation of a maze. Walls have no depth

@@ -1,7 +1,7 @@
 import type Big from "big.js";
 
-import Shape from "app/models/shape";
-import type VectorNumber from "app/models/vector-number";
+import Shape from "../models/shape";
+import type VectorNumber from "../models/vector-number";
 
 /**
  * This model class is a model of the walls and floor that compose a maze with the intention that each piece (wall or

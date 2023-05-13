@@ -1,12 +1,12 @@
 import Big from "big.js";
 
-import OrderedPair from "app/common/ordered-pair";
-import { roundAndStrip, ZERO } from "app/misc/big-util";
-import type ModelPath from "app/models/path";
-import Shape from "app/models/shape";
-import VectorNumber, { CHARACTER_HEIGHT, CHARACTER_WIDTH } from "app/models/vector-number";
-import SvgPath from "app/svg/path";
-import type Rect from "app/svg/rect";
+import OrderedPair from "../common/ordered-pair";
+import { roundAndStrip, ZERO } from "../misc/big-util";
+import type ModelPath from "../models/path";
+import Shape from "../models/shape";
+import VectorNumber, { CHARACTER_HEIGHT, CHARACTER_WIDTH } from "../models/vector-number";
+import SvgPath from "../svg/path";
+import type Rect from "../svg/rect";
 
 /**
  * A simple, not very flexible utility for serializing SVG elements to strings for manual SVG file construction.

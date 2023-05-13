@@ -1,5 +1,5 @@
-import type OrderedPair from "app/common/ordered-pair";
-import type Direction from "app/direction";
+import type OrderedPair from "../common/ordered-pair";
+import type Direction from "../direction";
 
 /**
  * Similar to a {@link Maze}, this model is a grid-based representation of a maze. The difference is that this has grid

@@ -1,7 +1,7 @@
 import type { ComponentFixture} from "@angular/core/testing";
 import { async, TestBed } from "@angular/core/testing";
 
-import { LightboxThumbnailComponent } from "app/lightbox-thumbnail/lightbox-thumbnail.component";
+import { LightboxThumbnailComponent } from "../lightbox-thumbnail/lightbox-thumbnail.component";
 
 describe("LightboxThumbnailComponent", () => {
     let component: LightboxThumbnailComponent;

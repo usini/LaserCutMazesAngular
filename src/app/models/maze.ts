@@ -1,5 +1,5 @@
-import type MazeGenerator from "app/algorithms/maze-generator";
-import Space from "app/models/space";
+import type MazeGenerator from "../algorithms/maze-generator";
+import Space from "../models/space";
 
 /**
  * This maze class is a representation of a maze based on a grid of squares. Each square knows about the four walls

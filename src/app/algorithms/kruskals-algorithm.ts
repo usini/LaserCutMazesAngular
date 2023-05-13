@@ -1,11 +1,11 @@
-import MazeGenerator from "app/algorithms/maze-generator";
-import OrderedPair from "app/common/ordered-pair";
-import Direction from "app/direction";
+import MazeGenerator from "../algorithms/maze-generator";
+import OrderedPair from "../common/ordered-pair";
+import Direction from "../direction";
 
 /**
  * Simple unidirectional tree for implementing a disjoint set
  */
-import type Maze from "app/models/maze";
+import type Maze from "../models/maze";
 class Tree {
     private parent: Tree = this;
 

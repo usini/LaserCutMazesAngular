@@ -1,7 +1,7 @@
 import type { ComponentFixture} from "@angular/core/testing";
 import { async, TestBed } from "@angular/core/testing";
 
-import { AboutComponent } from "app/about/about.component";
+import { AboutComponent } from "../about/about.component";
 
 describe("AboutComponent", () => {
     let component: AboutComponent;

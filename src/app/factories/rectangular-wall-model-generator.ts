@@ -1,8 +1,8 @@
-import OrderedPair from "app/common/ordered-pair";
-import Direction from "app/direction";
-import type { Wall as LwmWall } from "app/models/linear-wall-model";
-import type LinearWallModel from "app/models/linear-wall-model";
-import RectangularWallModel, { Wall as RwmWall } from "app/models/rectangular-wall-model";
+import OrderedPair from "../common/ordered-pair";
+import Direction from "../direction";
+import type { Wall as LwmWall } from "../models/linear-wall-model";
+import type LinearWallModel from "../models/linear-wall-model";
+import RectangularWallModel, { Wall as RwmWall } from "../models/rectangular-wall-model";
 
 /**
  * An instance of RectangularWallModelGenerator can be used to create a {@link RectangularWallModel} from

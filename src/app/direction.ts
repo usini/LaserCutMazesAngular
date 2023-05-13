@@ -1,4 +1,4 @@
-import type OrderedPair from "app/common/ordered-pair";
+import type OrderedPair from "./common/ordered-pair";
 
 /**
  * four directions for relating Spaces to each other

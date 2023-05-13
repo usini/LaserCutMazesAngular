@@ -1,4 +1,4 @@
-import Unit from "app/common/unit";
+import Unit from "../common/unit";
 
 /**
  * a class for encapsulating all of the config needed for building a maze

@@ -1,6 +1,6 @@
 import type Big from "big.js";
 
-import type OrderedPair from "app/common/ordered-pair";
+import type OrderedPair from "../common/ordered-pair";
 
 /**
  * An SVG <path/> element

@@ -1,4 +1,4 @@
-import Direction from "app/direction";
+import Direction from "../direction";
 
 /**
  * A Space represents an element in a 2D array representation of a maze. It knows whether it has walls on any four sides.

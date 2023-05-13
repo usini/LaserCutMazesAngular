@@ -2,7 +2,7 @@
 <div class="help-section">
     <h1>Impression</h1>
     <div class="group">
-        <app-lightbox-thumbnail title="Exemple SVG" image="LaserCutMazes/assets/blueprint.png" thumbnailHeight="100"></app-lightbox-thumbnail>
+        <app-lightbox-thumbnail title="Exemple SVG" image="LaserCutMazes/assets/blueprint.png" [thumbnailHeight]="100"></app-lightbox-thumbnail>
         <div class="cut-intro">
             Les différentes parties du labyrinthe sont regroupées et colorées différemment pour faciliter l'impression (voir l'exemple à gauche).
             L'ordre d'impression des groupes est important et l'ordre idéal est le suivant :
@@ -31,12 +31,12 @@
     <h1>Assemblage</h1>
     <h3>Mode plancher et mur</h3>
     <div class="group">
-        <app-lightbox-thumbnail title="Encoches du plancher" image="LaserCutMazes/assets/notches.png" thumbnailHeight="80"></app-lightbox-thumbnail>
+        <app-lightbox-thumbnail title="Encoches du plancher" image="LaserCutMazes/assets/notches.png" [thumbnailHeight]="80"></app-lightbox-thumbnail>
         <div class="numbering-text">
             La pièce du plancher comporte des encoches rectangulaires (gauche) ; les murs comportent des tenons qui s'emboîtent dans ces encoches (droite).
             Chaque paire d'encoche a un numéro imprimé entre elles, et une pièce de mur qui s'insère dans ces encoches porte le même numéro imprimé.
         </div>
-        <app-lightbox-thumbnail class="right" title="Pièces de mur numérotées" image="LaserCutMazes/assets/wallPieces.png" thumbnailHeight="80"></app-lightbox-thumbnail>
+        <app-lightbox-thumbnail class="right" title="Pièces de mur numérotées" image="LaserCutMazes/assets/wallPieces.png" [thumbnailHeight]="80"></app-lightbox-thumbnail>
     </div>
     <p>
         Si les pièces s'ajustent assez bien, il peut suffire de coller les murs le long du bord extérieur du plancher. Si elles s'ajustent très bien, vous n'aurez peut-être pas besoin de les coller du tout.
@@ -62,7 +62,7 @@
             <p>
                 Si votre logiciel de découpe laser ne respecte pas les paramètres de densité de pixels (points/pixels par pouce, DPI, etc.), votre image ne sera pas de la bonne taille, c'est-à-dire qu'elle sera réduite ou agrandie. Le problème avec cela est que la réduction de la taille de tout rend les encoches du plancher plus petites (et l'agrandissement rend les encoches du plancher plus grandes), mais l'épaisseur du matériau ne change pas, donc l'impression d'une image redimensionnée entraînerait des pièces de mur qui ne s'inséreraient pas dans les encoches. Plus précisément, la largeur des encoches doit être exactement de la même taille que l'épaisseur du matériau pour que les pièces s'assemblent, et la mise à l'échelle casse cela. Voir l'image suivante pour un exemple de cette mise à l'échelle automatique.
             </p>
-            <app-lightbox-thumbnail title="Réduit" image="LaserCutMazes/assets/improperScale.png" thumbnailWidth="600"></app-lightbox-thumbnail>
+            <app-lightbox-thumbnail title="Réduit" image="LaserCutMazes/assets/improperScale.png" [thumbnailWidth]="600"></app-lightbox-thumbnail>
             <p>
                 Le labyrinthe de l'exemple ci-dessus a été créé avec un rectangle de calibration de 8 pouces de large (surligné en vert), mais l'image a été réduite à environ 7,5 pouces. Pour corriger cela, toute l'image devrait être sélectionnée et agrandie (étirée) jusqu'à ce que le rectangle de calibration soit aligné avec la marque des 8 pouces sur la règle.
             </p>

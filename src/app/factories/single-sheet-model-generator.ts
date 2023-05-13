@@ -1,10 +1,10 @@
 import type Big from "big.js";
 
-import OrderedPair from "app/common/ordered-pair";
-import { ZERO } from "app/misc/big-util";
-import Path from "app/models/path";
-import type RectangularWallModel from "app/models/rectangular-wall-model";
-import SingleSheetModel from "app/models/single-sheet-model";
+import OrderedPair from "../common/ordered-pair";
+import { ZERO } from "../misc/big-util";
+import Path from "../models/path";
+import type RectangularWallModel from "../models/rectangular-wall-model";
+import SingleSheetModel from "../models/single-sheet-model";
 
 export default class SingleSheetModelGenerator {
 

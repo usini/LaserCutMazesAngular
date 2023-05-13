@@ -1,7 +1,7 @@
-import MazeGenerator from "app/algorithms/maze-generator";
-import OrderedPair from "app/common/ordered-pair";
-import Direction from "app/direction";
-import type Maze from "app/models/maze";
+import MazeGenerator from "../algorithms/maze-generator";
+import OrderedPair from "../common/ordered-pair";
+import Direction from "../direction";
+import type Maze from "../models/maze";
 
 /**
  * An implementation of https://en.wikipedia.org/wiki/Depth-first_search

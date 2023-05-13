@@ -1,9 +1,9 @@
 import type Big from "big.js";
 
-import OrderedPair from "app/common/ordered-pair";
-import { HALF, ZERO } from "app/misc/big-util";
-import type Shape from "app/models/shape";
-import type SheetWallModel from "app/models/sheet-wall-model";
+import OrderedPair from "../common/ordered-pair";
+import { HALF, ZERO } from "../misc/big-util";
+import type Shape from "../models/shape";
+import type SheetWallModel from "../models/sheet-wall-model";
 
 /**
  * This class has an optimization function that tiles the walls in the sheet so that they're

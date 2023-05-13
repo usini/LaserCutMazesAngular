@@ -1,7 +1,7 @@
 import type Big from "big.js";
 
-import OrderedPair from "app/common/ordered-pair";
-import { ZERO } from "app/misc/big-util";
+import OrderedPair from "../common/ordered-pair";
+import { ZERO } from "../misc/big-util";
 
 /**
  * A path is a set of points. The implication is that there is a line from point 0 to point 1, point 1 to

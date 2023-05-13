@@ -5,24 +5,24 @@ import { DomSanitizer } from "@angular/platform-browser";
 import Big from "big.js";
 import { saveAs } from "file-saver";
 
-import DepthFirstSearch from "app/algorithms/depth-first-search-algorithm";
-import EmptyAlgorithm from "app/algorithms/empty-algorithm";
-import KruskalsAlgorithm from "app/algorithms/kruskals-algorithm";
-import type MazeGenerator from "app/algorithms/maze-generator";
-import PrimsAlgorithm from "app/algorithms/prims-algorithm";
-import OrderedPair from "app/common/ordered-pair";
-import Unit from "app/common/unit";
-import Direction from "app/direction";
-import LinearWallModelGenerator from "app/factories/linear-wall-model-generator";
-import RectangularWallModelGenerator from "app/factories/rectangular-wall-model-generator";
-import SheetWallModelGenerator from "app/factories/sheet-wall-model-generator";
-import SingleSheetModelGenerator from "app/factories/single-sheet-model-generator";
-import MazePrinter from "app/maze-printer";
-import { min } from "app/misc/big-util";
-import CalibrationRectangle from "app/models/calibration-rectangle";
-import Maze from "app/models/maze";
-import MazeConfig from "app/models/maze-config";
-import PrintMode from "app/print-mode";
+import DepthFirstSearch from "../algorithms/depth-first-search-algorithm";
+import EmptyAlgorithm from "../algorithms/empty-algorithm";
+import KruskalsAlgorithm from "../algorithms/kruskals-algorithm";
+import type MazeGenerator from "../algorithms/maze-generator";
+import PrimsAlgorithm from "../algorithms/prims-algorithm";
+import OrderedPair from "../common/ordered-pair";
+import Unit from "../common/unit";
+import Direction from "../direction";
+import LinearWallModelGenerator from "../factories/linear-wall-model-generator";
+import RectangularWallModelGenerator from "../factories/rectangular-wall-model-generator";
+import SheetWallModelGenerator from "../factories/sheet-wall-model-generator";
+import SingleSheetModelGenerator from "../factories/single-sheet-model-generator";
+import MazePrinter from "../maze-printer";
+import { min } from "../misc/big-util";
+import CalibrationRectangle from "../models/calibration-rectangle";
+import Maze from "../models/maze";
+import MazeConfig from "../models/maze-config";
+import PrintMode from "../print-mode";
 
 @Component({
     selector: "app-maze-builder",

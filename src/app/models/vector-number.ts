@@ -1,8 +1,8 @@
 import Big from "big.js";
 
-import OrderedPair from "app/common/ordered-pair";
-import Path from "app/models/path";
-import Shape from "app/models/shape";
+import OrderedPair from "../common/ordered-pair";
+import Path from "../models/path";
+import Shape from "../models/shape";
 
 /**
  * A VectorNumber is a model with a numeric value, and context of width, height, and position

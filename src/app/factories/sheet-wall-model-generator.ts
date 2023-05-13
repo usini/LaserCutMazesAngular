@@ -1,16 +1,16 @@
 import type Big from "big.js";
 import type { Comparison } from "big.js";
 
-import OrderedPair from "app/common/ordered-pair";
-import Direction from "app/direction";
-import SheetWallTilingOptimizer from "app/factories/sheet-wall-tiling-optimizer";
-import { HALF, min, ZERO } from "app/misc/big-util";
-import Path from "app/models/path";
-import type { Wall as RwmWall } from "app/models/rectangular-wall-model";
-import type RectangularWallModel from "app/models/rectangular-wall-model";
-import Shape from "app/models/shape";
-import SheetWallModel from "app/models/sheet-wall-model";
-import VectorNumber from "app/models/vector-number";
+import OrderedPair from "../common/ordered-pair";
+import Direction from "../direction";
+import SheetWallTilingOptimizer from "../factories/sheet-wall-tiling-optimizer";
+import { HALF, min, ZERO } from "../misc/big-util";
+import Path from "../models/path";
+import type { Wall as RwmWall } from "../models/rectangular-wall-model";
+import type RectangularWallModel from "../models/rectangular-wall-model";
+import Shape from "../models/shape";
+import SheetWallModel from "../models/sheet-wall-model";
+import VectorNumber from "../models/vector-number";
 
 class NotchPosInfo {
     public direction: Direction;
