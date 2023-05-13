@@ -31,7 +31,7 @@ export default class RectangularWallModelGenerator {
         for (const wall of this.model.walls) {
             const wallDirection = Direction.determineDirection(wall.start, wall.end);
             if (wallDirection === Direction.NORTH || wallDirection === Direction.WEST) {
-                throw new Error("wall direction should only be EAST or SOUTH (start-to-end should be left-to-right or top-to-bottom): " +
+                throw new Error("la direction du mur ne doit être que EAST (EST) ou SOUTH (SUD) (du départ à l'arrivée devrait être de gauche à droite ou de haut en bas) : " +
                     wall.toString());
             }
             const isVertical = wallDirection === Direction.SOUTH;

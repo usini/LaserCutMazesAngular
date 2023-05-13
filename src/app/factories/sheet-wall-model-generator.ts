@@ -198,7 +198,7 @@ export default class SheetWallModelGenerator {
                 if (!firstPoint.equals(secondPoint)) {
                     sheetWallModel.floorOutline.addPath(new Path(firstPoint, secondPoint).setClosed(false));
                 } else {
-                    console.debug("skipping connecting floor outer path because it's length 0: " + firstPoint.toString());
+                    console.debug("ignore la connexion du chemin extérieur du sol car sa longueur est de 0 : " + firstPoint.toString());
                 }
             } else {
                 // notches are on different sides and neither is a corner (unusual case of both parts of a corner of the maze being open)
@@ -229,7 +229,7 @@ export default class SheetWallModelGenerator {
             secondPoint = nextNotch.points[3 + nextNotchAdditive % 4];
             floorCornerPoint = new OrderedPair(firstPoint.x, secondPoint.y);
         } else {
-            throw new Error("notch is not in edge map, but is on edge");
+            throw new Error("l'encoche n'est pas dans la carte des bords, mais elle se trouve sur le bord");
         }
         return new NotchConnection(firstPoint, floorCornerPoint, secondPoint);
     }
@@ -281,7 +281,7 @@ export default class SheetWallModelGenerator {
         } else if (p1Dir === Direction.WEST) {
             return p2.points[0].y.cmp(p1.points[0].y);
         } else {
-            throw new Error("notch is not in edge map, but is on edge");
+            throw new Error("L'encoche n'est pas présente dans la carte des bords, mais elle se trouve sur le bord.");
         }
     }
 }

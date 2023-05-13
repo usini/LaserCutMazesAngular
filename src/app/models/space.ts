@@ -53,7 +53,7 @@ export default class Space {
             case Direction.WEST:
                 return this.westOpen;
             default:
-                throw new Error(`invalid direction: ${direction}`);
+                throw new Error(`direction invalide : ${direction}`);
         }
     }
 

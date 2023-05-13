@@ -1,87 +1,68 @@
-<p>You can click on any of the thumbnails in this page to see full-size versions.</p>
+<p>Vous pouvez cliquer sur l'une des miniatures de cette page pour voir des versions en taille réelle.</p>
 <div class="help-section">
-    <h1>Printing</h1>
+    <h1>Impression</h1>
     <div class="group">
-        <app-lightbox-thumbnail title="Example SVG" image="LaserCutMazes/assets/blueprint.png" thumbnailHeight="100"></app-lightbox-thumbnail>
+        <app-lightbox-thumbnail title="Exemple SVG" image="LaserCutMazes/assets/blueprint.png" thumbnailHeight="100"></app-lightbox-thumbnail>
         <div class="cut-intro">
-            The different parts of the maze are grouped together and given different colors to facilitate printing (see example on left).
-            The order that the groups are printed matters and an ideal order is:
+            Les différentes parties du labyrinthe sont regroupées et colorées différemment pour faciliter l'impression (voir l'exemple à gauche).
+            L'ordre d'impression des groupes est important et l'ordre idéal est le suivant :
         </div>
     </div>
     <ol>
-        <li>score/engrave wall numbers and floor numbers (blue, floor and wall mode only)</li>
-        <li>cut walls and cut notches in floor and wall mode (black)/cut single maze piece in single sheet mode (black)</li>
-        <li>cut outline(s) (red)</li>
-        <li>DO NOT cut, score, or engrave the calibration rectangle (green)</li>
-        <li>DO NOT cut, score, or engrave the bounding box rectangle (purple)</li>
+        <li>marquer/graver les numéros des murs et des planchers (bleu, mode plancher et mur uniquement)</li>
+        <li>découper les murs et découper les encoches dans le plancher et le mur (noir) / découper une seule pièce de labyrinthe en mode feuille unique (noir)</li>
+        <li>découper les contours (rouge)</li>
+        <li>NE PAS découper, marquer ni graver le rectangle de calibration (vert)</li>
+        <li>NE PAS découper, marquer ni graver le rectangle de la boîte de délimitation (violet)</li>
     </ol>
     <ul>
         <li>
-            The numbers can be scored, or left out entirely. They're only there as a guide for assembly, though assembling a large maze without them could be
-            tedious.
+            Les numéros peuvent être marqués ou laissés de côté. Ils servent uniquement de guide pour l'assemblage, bien que l'assemblage d'un grand labyrinthe sans eux puisse être fastidieux.
         </li>
         <li>
-            The outlines should be cut last. Since these cuts cut the piece(s) out of the material, cutting this before could lead to
-            anything inside being misaligned.
+            Les contours doivent être découpés en dernier. Comme ces découpes coupent la ou les pièces du matériau, les découper avant pourrait entraîner un mauvais alignement de ce qui se trouve à l'intérieur.
         </li>
         <li>
-            The calibration rectangle serves as a guide for setting up the print job in your printer software and should not be cut, engraved, or scored at
-            all. See the section below for more details.
+            Le rectangle de calibration sert de guide pour configurer le travail d'impression dans votre logiciel d'impression et ne doit en aucun cas être découpé, gravé ou marqué. Consultez la section ci-dessous pour plus de détails.
         </li>
     </ul>
 </div>
 <div class="help-section">
-    <h1>Assembly</h1>
-    <h3>floor and wall mode</h3>
+    <h1>Assemblage</h1>
+    <h3>Mode plancher et mur</h3>
     <div class="group">
-        <app-lightbox-thumbnail title="Floor Notches" image="LaserCutMazes/assets/notches.png" thumbnailHeight="80"></app-lightbox-thumbnail>
+        <app-lightbox-thumbnail title="Encoches du plancher" image="LaserCutMazes/assets/notches.png" thumbnailHeight="80"></app-lightbox-thumbnail>
         <div class="numbering-text">
-            The floor piece has rectangular notches cut into it (left); the walls have stubs that fit into these notches (right).
-            Each pair of notches has a number printed between them, and a wall piece that fits into those notches has the same number printed on it.
+            La pièce du plancher comporte des encoches rectangulaires (gauche) ; les murs comportent des tenons qui s'emboîtent dans ces encoches (droite).
+            Chaque paire d'encoche a un numéro imprimé entre elles, et une pièce de mur qui s'insère dans ces encoches porte le même numéro imprimé.
         </div>
-        <app-lightbox-thumbnail class="right" title="Numbered Wall Pieces" image="LaserCutMazes/assets/wallPieces.png" thumbnailHeight="80"></app-lightbox-thumbnail>
+        <app-lightbox-thumbnail class="right" title="Pièces de mur numérotées" image="LaserCutMazes/assets/wallPieces.png" thumbnailHeight="80"></app-lightbox-thumbnail>
     </div>
     <p>
-        If the pieces fit somewhat snugly, you might only need to glue the walls along the outer edge to the floor. If they fit very tightly, you might not need
-        to glue them at all.
+        Si les pièces s'ajustent assez bien, il peut suffire de coller les murs le long du bord extérieur du plancher. Si elles s'ajustent très bien, vous n'aurez peut-être pas besoin de les coller du tout.
     </p>
-    <h3>single sheet mode</h3>
-    <p>In this mode all that is needed is to glue the maze piece onto the floor piece.</p>
-</div>
-<div class="help-section">
-    <h1>Out of Bounds</h1>
-    <p>
-        If the maze is too big, the pieces won't fit in a single printing area, and you'll get the out-of-bounds warning when the SVG is generated.
-        The tool currently doesn't break up the blueprint into multiple SVGs in this case. One solution would be to change any of the maze dimensions to use
-        less printing material; if that isn't preferred, you'll need to manually edit the SVG in the SVG editor of your choice to split the print into two or
-        more print jobs.
-    </p>
-    <p>
-        When the out-of-bounds situation occurs, the printer's max width and max height values will be used to generate a rectangular bounding box in the SVG
-        as a guide. It is displayed as a purple rectangle and anything outside of it will be outside of the printing area.
-    </p>
-</div>
-<div class="help-section">
-    <h1>Calibration Rectangle</h1>
-    <h3>A need for Calibration</h3>
-    <div>
+    <h3>Mode feuille unique</h3>
+    <p>Dans ce mode, il suffit de coller la pièce du labyrinthe sur le plancher.</p>
+    
+    </div>
+    <div class="help-section">
+        <h1>Hors limites</h1>
         <p>
-            If your laser cutter software doesn't respect the pixel density settings (dots/pixels per inch, DPI, etc) then your image won't be the proper size,
-            i.e. it will be scaled down or up. The problem with this is that scaling everything down makes the floor notches smaller, (and scaling up makes the
-            floor notches bigger), but the material thickness doesn't change, so printing a scaled image would result in wall pieces that wouldn't fit in the
-            notches. More specifically, the width of the notches has to be exactly the same size as the material thickness for the pieces to fit together, and
-            scaling breaks that. See the following image for an example of this auto-scaling.
+            Si le labyrinthe est trop grand, les pièces ne tiendront pas dans une seule zone d'impression et vous recevrez un avertissement de dépassement des limites lorsque le fichier SVG sera généré.
+            Pour le moment, l'outil ne divise pas le plan en plusieurs fichiers SVG dans ce cas. Une solution serait de modifier l'une des dimensions du labyrinthe pour utiliser moins de matériau d'impression ; si cela n'est pas souhaité, vous devrez éditer manuellement le fichier SVG dans l'éditeur SVG de votre choix pour diviser l'impression en deux ou plusieurs travaux d'impression.
         </p>
-        <app-lightbox-thumbnail title="Scaled Down" image="LaserCutMazes/assets/improperScale.png" thumbnailWidth="600"></app-lightbox-thumbnail>
         <p>
-            The above example maze was created with an 8-inch wide calibration rectangle (highlighted in green), but the image has been scaled down to about
-            7.5 inches. In order to fix this, the entire image should be selected and scaled up (stretched) until the calibration rectangle is lined up with
-            the 8-inch mark on the ruler.
-        </p>
-        <app-lightbox-thumbnail title="Corrected Scale" image="LaserCutMazes/assets/correctedScale.png" thumbnailWidth="600"></app-lightbox-thumbnail>
-        <p>
-            In the second image, the entire blueprint has been scaled back up to make the calibration rectangle the correct size (8 inches wide here),
-            ensuring that all pieces are the correct size.
+            Lorsque la situation de dépassement des limites se produit, les valeurs maximales de largeur et de hauteur de l'imprimante seront utilisées pour générer un rectangle de délimitation rectangulaire dans le fichier SVG en tant que guide. Il est affiché comme un rectangle violet et tout ce qui se trouve à l'extérieur de celui-ci se trouvera en dehors de la zone d'impression.
         </p>
     </div>
-</div>
+    <div class="help-section">
+        <h1>Rectangle de calibration</h1>
+        <h3>Nécessité d'un calibrage</h3>
+        <div>
+            <p>
+                Si votre logiciel de découpe laser ne respecte pas les paramètres de densité de pixels (points/pixels par pouce, DPI, etc.), votre image ne sera pas de la bonne taille, c'est-à-dire qu'elle sera réduite ou agrandie. Le problème avec cela est que la réduction de la taille de tout rend les encoches du plancher plus petites (et l'agrandissement rend les encoches du plancher plus grandes), mais l'épaisseur du matériau ne change pas, donc l'impression d'une image redimensionnée entraînerait des pièces de mur qui ne s'inséreraient pas dans les encoches. Plus précisément, la largeur des encoches doit être exactement de la même taille que l'épaisseur du matériau pour que les pièces s'assemblent, et la mise à l'échelle casse cela. Voir l'image suivante pour un exemple de cette mise à l'échelle automatique.
+            </p>
+            <app-lightbox-thumbnail title="Réduit" image="LaserCutMazes/assets/improperScale.png" thumbnailWidth="600"></app-lightbox-thumbnail>
+            <p>
+                Le labyrinthe de l'exemple ci-dessus a été créé avec un rectangle de calibration de 8 pouces de large (surligné en vert), mais l'image a été réduite à environ 7,5 pouces. Pour corriger cela, toute l'image devrait être sélectionnée et agrandie (étirée) jusqu'à ce que le rectangle de calibration soit aligné avec la marque des 8 pouces sur la règle.
+            </p>

@@ -79,7 +79,7 @@ export default class SheetWallTilingOptimizer {
         wall.translate(this.cursor);
         const wallLabel = this.sheetWallModel.wallLabels.get(wall);
         if (typeof wallLabel === "undefined") {
-            throw new Error(`You forgot to add a shape to the wallLabels map: ${wall.toString()}`);
+            throw new Error(`Vous avez oublié d'ajouter une forme à la carte des étiquettes de mur : ${wall.toString()}`);
         }
         wallLabel.translate(new OrderedPair(
             this.cursor.x.add(wall.width.mul(HALF)).sub(wallLabel.width.mul(HALF)),
@@ -98,7 +98,7 @@ export default class SheetWallTilingOptimizer {
 
     private fitsInCurrentRow(wall: Shape): boolean {
         if (this.currentMaxRowWidth === null) {
-            throw new Error("you shouldn't call fitsInCurrentRow when currentMaxRowWidth is null");
+            throw new Error("Vous ne devriez pas appeler fitsInCurrentRow lorsque currentMaxRowWidth est null.");
         }
         return this.cursor.x.sub(this.beginningOfLineX).add(wall.width).lte(this.currentMaxRowWidth);
     }

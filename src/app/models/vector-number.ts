@@ -33,7 +33,7 @@ export default class VectorNumber {
         if (shape instanceof Shape) {
             return Shape.copy(shape);
         }
-        throw new Error(`"${c}" is not a valid character for VectorNumber`);
+        throw new Error(`"${c}" n'est pas un caractère valide pour VectorNumber`);
     }
 
     public translate(delta: OrderedPair<Big>): VectorNumber {
